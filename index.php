@@ -61,8 +61,8 @@
 		'consumer_secret' => "kHLIp6VdV1u74OLtWnMa7x6LZ5ReLLsi5kwXU2woBjS5o3ePxn"
 	);
 
-	$url = 'https://api.twitter.com/1.1/search/tweets.json';
-	$getfield = '?src=typd&q=gow100s';
+	$url = 'https://api.twitter.com/1.1/statuses/user_timeline.json';
+	$getfield = '?screen_name=gow100s&count=1';
 	$requestMethod = 'GET';
 
 	$twitter = new TwitterAPIExchange($settings);
